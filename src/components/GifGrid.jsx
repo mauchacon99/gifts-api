@@ -4,7 +4,7 @@ import Loading from './Loading'
 
 const GifGrid = ({category}) => {
 
-    const { loading, data:Imagen} = useFetchGifs(category);
+    const { loading, data} = useFetchGifs(category);
 
     return (
         <>
@@ -15,7 +15,7 @@ const GifGrid = ({category}) => {
                 </p>
                 <div className="flex p-3">
                     <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-4 ">
-                            { Imagen.map(({title, id, url, audio}) =>{
+                            { data.map(({title, id, url}) =>{
                                 return  ( 
                                     <li  key={id} className="  hover:bg-indigo-700 rounded-lg  transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110 " >
                                     <a href="/#"  className=" group block rounded-lg p-2  ">
