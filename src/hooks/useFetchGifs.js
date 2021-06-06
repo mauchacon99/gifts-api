@@ -9,8 +9,8 @@ export const useFetchGifs = category => {
          
     })
 
-    useEffect(async() => {
-        const Gifts = await getGifts(category)
+    useEffect(() => {
+        const Gifts =  getGifts(category)
             setState({
                 data:Gifts,
                 loading:false,
