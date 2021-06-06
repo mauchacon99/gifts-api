@@ -10,7 +10,7 @@ export const useFetchGifs = category => {
     })
 
     useEffect( () => {
-         getGifts(category).then(data => setState({ data:data,loading:false,}))
+         getGifts(category).then(data => setState({ data:data,loading:false}))
    }, [category])
 
   
