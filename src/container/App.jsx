@@ -5,7 +5,7 @@ import GifExpertApp from './../components/GifExpertApp'
 const app = () => {
     return (
         <>
-            <GifExpertApp/>
+            <GifExpertApp />
         </>
     );
 };
